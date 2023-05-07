@@ -6,7 +6,7 @@
         com.rpl/specter                     {:mvn/version "1.1.4"}
         
         org.clojure/tools.cli               {:mvn/version "1.0.214"}
-        org.jsoup/jsoup                     {:mvn/version "1.15.4"}
+        org.jsoup/jsoup                     {:mvn/version "1.16.1"}
         
         babashka/fs                         {:mvn/version "0.3.17"}
         
@@ -20,7 +20,7 @@
         org.slf4j/slf4j-simple              {:mvn/version "2.0.7"}
 
         http-kit/http-kit                   {:mvn/version "2.6.0"}
-        org.babashka/http-client            {:mvn/version "0.1.8"}
+        org.babashka/http-client            {:mvn/version "0.2.9"}
         metosin/reitit                      {:mvn/version "0.6.0"}
 
         buddy/buddy-auth                    {:mvn/version "3.0.323"}
@@ -39,7 +39,7 @@
                                cider/orchard                        {:mvn/version "0.11.0"}
                                io.github.borkdude/carve {:git/url "https://github.com/borkdude/carve"
                                                          :git/sha "14a3a5db4b372e33d20763a8d1344bddae72c735"}}
-                  :extra-paths ["C:/Users/twalter/scoop/apps/temurin19-jdk/19.0.2-7/lib/src.zip"]
+                  :extra-paths ["C:/Users/twalter/scoop/apps/temurin-jdk/20.0.1-9/lib/src.zip"]
                   :main-opts ["-m" "nrepl.cmdline" "--middleware"
                               "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
 
@@ -52,7 +52,7 @@
            :antq {:invocation "deps -M:antq"
                   :url "https://github.com/liquidz/antq"
                   
-                  :extra-deps {com.github.liquidz/antq {:mvn/version "2.3.1043"}
+                  :extra-deps {com.github.liquidz/antq {:mvn/version "2.4.1070"}
                                org.slf4j/slf4j-simple  {:mvn/version "2.0.7"}}
                   :main-opts ["-m" "antq.core" "outdated"]}
 
