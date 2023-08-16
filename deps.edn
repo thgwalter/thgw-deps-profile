@@ -20,7 +20,7 @@
         org.slf4j/slf4j-simple              {:mvn/version "2.0.7"}
 
         http-kit/http-kit                   {:mvn/version "2.7.0"}
-        org.babashka/http-client            {:mvn/version "0.4.12"}
+        org.babashka/http-client            {:mvn/version "0.4.13"}
         metosin/reitit                      {:mvn/version "0.6.0"}
 
         buddy/buddy-auth                    {:mvn/version "3.0.323"}
@@ -33,13 +33,13 @@
  :mvn/local-repo "C:\\repo"
 
  :aliases {:repl {:extra-deps {nrepl/nrepl                          {:mvn/version "1.0.0"}
-                               cider/cider-nrepl                    {:mvn/version "0.32.0"}
+                               cider/cider-nrepl                    {:mvn/version "0.35.0"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.0"}
-                               mx.cider/tools.deps.enrich-classpath {:mvn/version "1.11.2"}
-                               cider/orchard                        {:mvn/version "0.13.0"}
+                               mx.cider/tools.deps.enrich-classpath {:mvn/version "1.12.0"}
+                               cider/orchard                        {:mvn/version "0.14.2"}
                                io.github.borkdude/carve {:git/url "https://github.com/borkdude/carve"
                                                          :git/sha "cb621317ae1582869c8bd8f1a47cf57a3598d803"}}
-                  :extra-paths ["C:/Users/twalter/scoop/apps/temurin-jdk/20.0.1-9/lib/src.zip"]
+                  :extra-paths ["C:/Users/Utilisateur/scoop/apps/zulufx-jdk/20.32.11/lib/src.zip"]
                   :main-opts ["-m" "nrepl.cmdline" "--middleware"
                               "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
 
@@ -52,7 +52,7 @@
            :antq {:invocation "deps -M:antq"
                   :url "https://github.com/liquidz/antq"
                   
-                  :extra-deps {com.github.liquidz/antq {:mvn/version "2.5.1095"}
+                  :extra-deps {com.github.liquidz/antq {:mvn/version "2.5.1109"}
                                org.slf4j/slf4j-simple  {:mvn/version "2.0.7"}}
                   :main-opts ["-m" "antq.core" "outdated"]}
 
@@ -65,12 +65,12 @@
            :build-repl {:invocation "deps -M:build-repl"
                         :url "https://github.com/clojure/tools.build"
                         
-                        :deps {io.github.clojure/tools.build {:mvn/version "0.9.4"}}
+                        :deps {io.github.clojure/tools.build {:mvn/version "0.9.5"}}
                         :ns-default build
                         :extra-deps {nrepl/nrepl                          {:mvn/version "1.0.0"}
-                                     cider/cider-nrepl                    {:mvn/version "0.32.0"}
+                                     cider/cider-nrepl                    {:mvn/version "0.35.0"}
                                      refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.0"}
-                                     cider/orchard                        {:mvn/version "0.13.0"}}
+                                     cider/orchard                        {:mvn/version "0.14.2"}}
                         :extra-paths ["."]
                         :main-opts ["-m" "nrepl.cmdline" "--middleware"
                                     "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
