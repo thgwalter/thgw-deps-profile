@@ -33,7 +33,7 @@
  :mvn/local-repo "C:\\repo"
 
  :aliases {:repl {:extra-deps {nrepl/nrepl                          {:mvn/version "1.0.0"}
-                               cider/cider-nrepl                    {:mvn/version "0.35.1"}
+                               cider/cider-nrepl                    {:mvn/version "0.36.0"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.0"}
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.14.0"}
                                cider/orchard                        {:mvn/version "0.14.2"}
@@ -68,7 +68,7 @@
                         :deps {io.github.clojure/tools.build {:mvn/version "0.9.5"}}
                         :ns-default build
                         :extra-deps {nrepl/nrepl                          {:mvn/version "1.0.0"}
-                                     cider/cider-nrepl                    {:mvn/version "0.35.1"}
+                                     cider/cider-nrepl                    {:mvn/version "0.36.0"}
                                      refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.0"}
                                      cider/orchard                        {:mvn/version "0.14.2"}}
                         :extra-paths ["."]
