@@ -82,11 +82,6 @@
            
            :tools-deps {:extra-deps {org.clojure/tools.deps.alpha {:mvn/version "0.15.1254"}}}}}
 
-;; deps -Ttools install-latest io.github.clojure/tools.deps.graph :as deps-graph
-;; deps -Ttools install-latest :tool deps-graph
-;; deps -Ttools install-latest :lib com.github.liquidz/antq :as antq
-;; deps -Tantq outdated
-
 ;; Aliases
 ;;   resolve-deps aliases (-R) affect dependency resolution, options:
 ;;     :extra-deps - specifies extra deps to add to :deps
