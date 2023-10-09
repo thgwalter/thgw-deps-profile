@@ -10,8 +10,8 @@
         
         babashka/fs                         {:mvn/version "0.4.19"}
         
-        com.github.seancorfield/next.jdbc   {:mvn/version "1.3.883"}
-        com.github.seancorfield/honeysql    {:mvn/version "2.4.1066"}
+        com.github.seancorfield/next.jdbc   {:mvn/version "1.3.894"}
+        com.github.seancorfield/honeysql    {:mvn/version "2.4.1078"}
         org.xerial/sqlite-jdbc              {:mvn/version "3.43.0.0"}
         org.clojars.mjdowney/excel-clj      {:mvn/version "2.2.0"}
 
@@ -33,31 +33,25 @@
  :mvn/local-repo "C:\\repo"
 
  :aliases {:repl {:extra-deps {nrepl/nrepl                          {:mvn/version "1.0.0"}
-                               cider/cider-nrepl                    {:mvn/version "0.37.1"}
+                               cider/cider-nrepl                    {:mvn/version "0.39.0"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.0"}
-                               mx.cider/tools.deps.enrich-classpath {:mvn/version "1.16.0"}
-                               cider/orchard                        {:mvn/version "0.14.2"}}
-                  :extra-paths ["C:/Users/Utilisateur/scoop/apps/zulufx-jdk/20.32.11/lib/src.zip"]
+                               mx.cider/tools.deps.enrich-classpath {:mvn/version "1.18.0"}
+                               cider/orchard                        {:mvn/version "0.16.1"}}
+                  :extra-paths ["C:/Users/Utilisateur/scoop/apps/zulufx-jdk/21.28.85/lib/src.zip"]
                   :main-opts ["-m" "nrepl.cmdline" "--middleware"
                               "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
 
-           :build-repl {:invocation "deps -M:build-repl"
-                        :url "https://github.com/clojure/tools.build"
-                        
-                        :deps {io.github.clojure/tools.build {:mvn/version "0.9.5"}}
+           :build-repl {:deps {io.github.clojure/tools.build {:mvn/version "0.9.6"}}
                         :ns-default build
                         :extra-deps {nrepl/nrepl                          {:mvn/version "1.0.0"}
-                                     cider/cider-nrepl                    {:mvn/version "0.37.1"}
+                                     cider/cider-nrepl                    {:mvn/version "0.39.0"}
                                      refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.0"}
-                                     cider/orchard                        {:mvn/version "0.14.2"}}
+                                     cider/orchard                        {:mvn/version "0.16.1"}}
                         :extra-paths ["."]
                         :main-opts ["-m" "nrepl.cmdline" "--middleware"
                                     "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
            
-           :build {:invocation "deps -T:build jar"
-                   :url "https://github.com/clojure/tools.build"
-
-                   :deps {io.github.clojure/tools.build {:mvn/version "0.9.5"}}
+           :build {:deps {io.github.clojure/tools.build {:mvn/version "0.9.6"}}
                    :ns-default build}
            
            :test {:extra-paths ["test"]
@@ -66,10 +60,7 @@
                   :exec-fn cognitect.test-runner.api/test
                   :main-opts ["-m" "cognitect.test-runner"]}
            
-           :antq {:invocation "deps -M:antq"
-                  :url "https://github.com/liquidz/antq"
-                  
-                  :extra-deps {com.github.liquidz/antq {:mvn/version "2.5.1109"}
+           :antq {:extra-deps {com.github.liquidz/antq {:mvn/version "2.7.1133"}
                                org.slf4j/slf4j-simple  {:mvn/version "2.0.9"}}
                   :main-opts ["-m" "antq.core" "outdated"]}
 
