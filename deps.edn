@@ -6,7 +6,7 @@
         com.rpl/specter                     {:mvn/version "1.1.4"}
         
         org.clojure/tools.cli               {:mvn/version "1.0.219"}
-        org.jsoup/jsoup                     {:mvn/version "1.16.1"}
+        org.jsoup/jsoup                     {:mvn/version "1.16.2"}
         
         babashka/fs                         {:mvn/version "0.4.19"}
         
@@ -37,7 +37,7 @@
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.0"}
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.18.2"}
                                cider/orchard                        {:mvn/version "0.16.1"}}
-                  :extra-paths ["C:/Users/Utilisateur/scoop/apps/zulufx-jdk/21.28.85/lib/src.zip"]
+                  :extra-paths ["C:/Users/Utilisateur/scoop/apps/zulu-jdk/21.30.15/lib/src.zip"]
                   :main-opts ["-m" "nrepl.cmdline" "--middleware"
                               "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
 
