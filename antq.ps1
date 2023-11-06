@@ -1,0 +1,1 @@
+$Env:ANTQ_DEFAULT_TIMEOUT = 25000; clj -T:antq
