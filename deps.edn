@@ -32,27 +32,19 @@
 
  :mvn/local-repo "C:\\repo"
 
- :aliases {:repl {:extra-deps {nrepl/nrepl                          {:mvn/version "1.1.0"}
+ :aliases {:tools-deps {:extra-deps {org.clojure/tools.deps {:mvn/version "0.18.1354"}}}
+
+           :repl {:extra-deps {io.github.clojure/tools.build        {:mvn/version "0.9.6"}
+                               nrepl/nrepl                          {:mvn/version "1.1.0"}
                                cider/cider-nrepl                    {:mvn/version "0.43.3"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.0"}
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.18.5"}
                                cider/orchard                        {:mvn/version "0.20.0"}}
-                  :extra-paths ["C:/Users/Utilisateur/scoop/apps/zulu-jdk/21.30.15/lib/src.zip"]
+                  :ns-default build
+                  :extra-paths ["." "C:/Users/Utilisateur/scoop/apps/zulu-jdk/21.30.15/lib/src.zip"]
                   :main-opts ["-m" "nrepl.cmdline" "--middleware"
                               "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
 
-           :build-repl {:replace-deps {io.github.clojure/tools.build        {:mvn/version "0.9.6"}
-                                       
-                                       nrepl/nrepl                          {:mvn/version "1.1.0"}
-                                       cider/cider-nrepl                    {:mvn/version "0.43.3"}
-                                       refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.0"}
-                                       mx.cider/tools.deps.enrich-classpath {:mvn/version "1.18.5"}
-                                       cider/orchard                        {:mvn/version "0.20.0"}}
-                        :ns-default build
-                        :extra-paths ["." "C:/Users/Utilisateur/scoop/apps/zulu-jdk/21.30.15/lib/src.zip"]
-                        :main-opts ["-m" "nrepl.cmdline" "--middleware"
-                                    "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
-           
            :build {:replace-deps {io.github.clojure/tools.build {:mvn/version "0.9.6"}}
                    :ns-default build}
            
@@ -61,9 +53,7 @@
                                io.github.cognitect-labs/test-runner {:git/tag "v0.5.1" :git/sha "dfb30dd"}}
                   :exec-fn cognitect.test-runner.api/test
                   :main-opts ["-m" "cognitect.test-runner"]}
-
+           
            :antq {:replace-deps {com.github.liquidz/antq {:mvn/version "RELEASE"}}
                   :ns-default antq.core
-                  :exec-fn -main}
-
-           :tools-deps {:extra-deps {org.clojure/tools.deps.alpha {:mvn/version "0.15.1254"}}}}}
+                  :exec-fn -main}}}
