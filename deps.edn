@@ -45,6 +45,9 @@
 
            :build {:replace-deps {io.github.clojure/tools.build {:mvn/version "0.9.6"}}
                    :ns-default build}
+
+           :neil {:deps {io.github.babashka/neil {:git/tag "v0.1.41" :git/sha "77288d4"}}
+                  :main-opts ["-m" "babashka.neil"]}
            
            :test {:extra-paths ["test"]
                   :extra-deps {org.clojure/test.check {:mvn/version "1.1.1"}
