@@ -1,3 +1,5 @@
 *~
 .cpcache/
 tools/
+.clj-kondo/
+.lsp/
