@@ -34,10 +34,10 @@
 
  :aliases {:repl {:extra-deps {io.github.clojure/tools.build        {:mvn/version "0.9.6"}
                                nrepl/nrepl                          {:mvn/version "1.1.0"}
-                               cider/cider-nrepl                    {:mvn/version "0.43.3"}
+                               cider/cider-nrepl                    {:mvn/version "0.44.0"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.0"}
-                               mx.cider/tools.deps.enrich-classpath {:mvn/version "1.18.5"}
-                               cider/orchard                        {:mvn/version "0.20.0"}}
+                               mx.cider/tools.deps.enrich-classpath {:mvn/version "1.18.6"}
+                               cider/orchard                        {:mvn/version "0.21.0"}}
                   :ns-default build
                   :extra-paths ["." "C:/Users/Utilisateur/scoop/apps/zulu-jdk/21.30.15/lib/src.zip"]
                   :main-opts ["-m" "nrepl.cmdline" "--middleware"
