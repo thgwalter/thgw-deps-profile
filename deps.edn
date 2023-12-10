@@ -39,7 +39,9 @@
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.19.0"}
                                cider/orchard                        {:mvn/version "0.21.0"}}
                   :ns-default build
-                  :extra-paths ["." "C:/Users/Utilisateur/scoop/apps/zulu-jdk/21.30.15/lib/src.zip"]
+                  :extra-paths ["."
+                                "C:/Users/Utilisateur/scoop/apps/zulu-jdk/21.30.15/lib/src.zip"
+                                "/home/util/opt/zulu21.30.15-ca-jdk21.0.1-linux_x64/lib/src.zip"]
                   :main-opts ["-m" "nrepl.cmdline" "--middleware"
                               "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
 
