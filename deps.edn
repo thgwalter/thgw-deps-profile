@@ -17,7 +17,7 @@
 
         camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.3"}
         net.cgrand/xforms                   {:mvn/version "0.19.5"}
-        org.slf4j/slf4j-simple              {:mvn/version "2.0.10"}
+        org.slf4j/slf4j-simple              {:mvn/version "2.0.11"}
 
         http-kit/http-kit                   {:mvn/version "2.7.0"}
         org.babashka/http-client            {:mvn/version "0.4.15"}
@@ -37,7 +37,7 @@
                                cider/cider-nrepl                    {:mvn/version "0.44.0"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.1"}
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.19.0"}
-                               cider/orchard                        {:mvn/version "0.21.0"}}
+                               cider/orchard                        {:mvn/version "0.22.0"}}
                   :ns-default build
                   :extra-paths ["."
                                 "C:/Users/Utilisateur/scoop/apps/zulu-jdk/21.30.15/lib/src.zip"
