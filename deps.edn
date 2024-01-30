@@ -16,7 +16,7 @@
         org.clojars.mjdowney/excel-clj      {:mvn/version "2.2.0"}
 
         camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.3"}
-        net.cgrand/xforms                   {:mvn/version "0.19.5"}
+        net.cgrand/xforms                   {:mvn/version "0.19.6"}
         org.slf4j/slf4j-simple              {:mvn/version "2.0.11"}
 
         http-kit/http-kit                   {:mvn/version "2.7.0"}
