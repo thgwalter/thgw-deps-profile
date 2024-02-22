@@ -1,11 +1,11 @@
 {:paths ["src" "resources"]
 
  :deps {org.clojure/clojure                 {:mvn/version "1.11.1"}
-        org.clojure/spec.alpha              {:mvn/version "0.3.218"}
+        org.clojure/spec.alpha              {:mvn/version "0.4.233"}
         org.clojure/core.specs.alpha        {:mvn/version "0.2.62"}
         com.rpl/specter                     {:mvn/version "1.1.4"}
         
-        org.clojure/tools.cli               {:mvn/version "1.0.219"}
+        org.clojure/tools.cli               {:mvn/version "1.1.230"}
         org.jsoup/jsoup                     {:mvn/version "1.17.2"}
         
         babashka/fs                         {:mvn/version "0.5.20"}
@@ -33,14 +33,14 @@
  :mvn/local-repo "C:\\repo"
 
  :aliases {:repl {:extra-deps {io.github.clojure/tools.build        {:mvn/version "0.9.6"}
-                               nrepl/nrepl                          {:mvn/version "1.1.0"}
+                               nrepl/nrepl                          {:mvn/version "1.1.1"}
                                cider/cider-nrepl                    {:mvn/version "0.45.0"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.9.1"}
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.19.0"}
                                cider/orchard                        {:mvn/version "0.22.0"}}
                   :ns-default build
                   :extra-paths ["."
-                                "C:/Users/Utilisateur/scoop/apps/zulu-jdk/21.30.15/lib/src.zip"
+                                "C:/Users/Utilisateur/scoop/apps/zulufx-jdk/21.32.17/lib/src.zip"
                                 "/home/util/opt/zulu21.30.15-ca-jdk21.0.1-linux_x64/lib/src.zip"]
                   :main-opts ["-m" "nrepl.cmdline" "--middleware"
                               "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
