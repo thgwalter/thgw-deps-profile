@@ -49,7 +49,7 @@
            :build {:replace-deps {io.github.clojure/tools.build {:mvn/version "0.10.0"}}
                    :ns-default build}
 
-           :neil {:deps {io.github.babashka/neil {:git/tag "v0.2.63" :git/sha "076fb83"}}
+           :neil {:deps {io.github.babashka/neil {:git/tag "v0.3.65" :git/sha "9a79582"}}
                   :main-opts ["-m" "babashka.neil"]}
            
            :test {:extra-paths ["test"]
