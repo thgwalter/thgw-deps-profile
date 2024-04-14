@@ -17,10 +17,10 @@
 
         camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.3"}
         net.cgrand/xforms                   {:mvn/version "0.19.6"}
-        org.slf4j/slf4j-simple              {:mvn/version "2.0.12"}
+        org.slf4j/slf4j-simple              {:mvn/version "2.0.13"}
 
         http-kit/http-kit                   {:mvn/version "2.7.0"}
-        org.babashka/http-client            {:mvn/version "0.4.16"}
+        org.babashka/http-client            {:mvn/version "0.4.17"}
         metosin/reitit                      {:mvn/version "0.6.0"}
 
         buddy/buddy-auth                    {:mvn/version "3.0.323"}
