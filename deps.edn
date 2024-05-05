@@ -19,9 +19,9 @@
         net.cgrand/xforms                   {:mvn/version "0.19.6"}
         org.slf4j/slf4j-simple              {:mvn/version "2.0.13"}
 
-        http-kit/http-kit                   {:mvn/version "2.7.0"}
+        http-kit/http-kit                   {:mvn/version "2.8.0"}
         org.babashka/http-client            {:mvn/version "0.4.19"}
-        metosin/reitit                      {:mvn/version "0.6.0"}
+        metosin/reitit                      {:mvn/version "0.7.0"}
 
         buddy/buddy-auth                    {:mvn/version "3.0.323"}
         buddy/buddy-hashers                 {:mvn/version "2.0.167"}}
@@ -32,12 +32,12 @@
 
  :mvn/local-repo "C:\\repo"
 
- :aliases {:repl {:extra-deps {io.github.clojure/tools.build        {:mvn/version "0.10.0"}
+ :aliases {:repl {:extra-deps {io.github.clojure/tools.build        {:mvn/version "0.10.3"}
                                nrepl/nrepl                          {:mvn/version "1.1.1"}
                                cider/cider-nrepl                    {:mvn/version "0.47.1"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.10.0"}
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.19.3"}
-                               cider/orchard                        {:mvn/version "0.23.3"}}
+                               cider/orchard                        {:mvn/version "0.25.0"}}
                   :ns-default build
                   :extra-paths ["."
                                 "C:/Users/Utilisateur/scoop/apps/zulufx-jdk/22.28.91/lib/src.zip"
@@ -46,7 +46,7 @@
                   :main-opts ["-m" "nrepl.cmdline" "--middleware"
                               "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"]}
 
-           :build {:replace-deps {io.github.clojure/tools.build {:mvn/version "0.10.0"}}
+           :build {:replace-deps {io.github.clojure/tools.build {:mvn/version "0.10.3"}}
                    :ns-default build}
 
            :neil {:deps {io.github.babashka/neil {:git/tag "v0.3.65" :git/sha "9a79582"}}
