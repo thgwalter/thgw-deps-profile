@@ -1,8 +1,8 @@
 {:paths ["src" "resources"]
 
  :deps {org.clojure/clojure                 {:mvn/version "1.11.3"}
-        org.clojure/spec.alpha              {:mvn/version "0.4.233"}
-        org.clojure/core.specs.alpha        {:mvn/version "0.3.70"}
+        org.clojure/spec.alpha              {:mvn/version "0.5.238"}
+        org.clojure/core.specs.alpha        {:mvn/version "0.4.74"}
         com.rpl/specter                     {:mvn/version "1.1.4"}
         
         org.clojure/tools.cli               {:mvn/version "1.1.230"}
@@ -34,7 +34,7 @@
 
  :aliases {:repl {:extra-deps {io.github.clojure/tools.build        {:mvn/version "0.10.3"}
                                nrepl/nrepl                          {:mvn/version "1.1.1"}
-                               cider/cider-nrepl                    {:mvn/version "0.47.1"}
+                               cider/cider-nrepl                    {:mvn/version "0.48.0"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.10.0"}
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.19.3"}
                                cider/orchard                        {:mvn/version "0.25.0"}}
