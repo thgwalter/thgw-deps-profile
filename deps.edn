@@ -59,6 +59,6 @@
                   :exec-fn cognitect.test-runner.api/test
                   :main-opts ["-m" "cognitect.test-runner"]}
            
-           :antq {:replace-deps {com.github.liquidz/antq {:mvn/version "2.9.1917"}}
+           :antq {:replace-deps {com.github.liquidz/antq {:mvn/version "2.9.1221"}}
                   :ns-default antq.core
                   :exec-fn -main}}}
