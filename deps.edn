@@ -1,6 +1,6 @@
 {:paths ["src" "resources"]
 
- :deps {org.clojure/clojure                 {:mvn/version "1.11.4"}
+ :deps {org.clojure/clojure                 {:mvn/version "1.12.0"}
         org.clojure/spec.alpha              {:mvn/version "0.5.238"}
         org.clojure/core.specs.alpha        {:mvn/version "0.4.74"}
         com.rpl/specter                     {:mvn/version "1.1.4"}
@@ -11,7 +11,7 @@
         babashka/fs                         {:mvn/version "0.5.22"}
         
         com.github.seancorfield/next.jdbc   {:mvn/version "1.3.939"}
-        com.github.seancorfield/honeysql    {:mvn/version "2.6.1147"}
+        com.github.seancorfield/honeysql    {:mvn/version "2.6.1161"}
         org.xerial/sqlite-jdbc              {:mvn/version "3.46.1.0"}
         org.clojars.mjdowney/excel-clj      {:mvn/version "2.2.0"}
 
@@ -21,7 +21,7 @@
 
         http-kit/http-kit                   {:mvn/version "2.8.0"}
         org.babashka/http-client            {:mvn/version "0.4.20"}
-        metosin/reitit                      {:mvn/version "0.7.1"}
+        metosin/reitit                      {:mvn/version "0.7.2"}
 
         buddy/buddy-auth                    {:mvn/version "3.0.323"}
         buddy/buddy-hashers                 {:mvn/version "2.0.167"}}
@@ -30,11 +30,11 @@
              "clojars" {:url "https://repo.clojars.org/"}
              "jitpack" {:url "https://jitpack.io"}}
 
- :mvn/local-repo "C:\\repo"
+ ;;:mvn/local-repo "C:\\repo"
 
  :aliases {:repl {:extra-deps {io.github.clojure/tools.build        {:mvn/version "0.10.5"}
                                nrepl/nrepl                          {:mvn/version "1.3.0"}
-                               cider/cider-nrepl                    {:mvn/version "0.50.1"}
+                               cider/cider-nrepl                    {:mvn/version "0.50.2"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.10.0"}
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.19.3"}
                                cider/orchard                        {:mvn/version "0.27.2"}}
