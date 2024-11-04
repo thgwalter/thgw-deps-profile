@@ -37,7 +37,7 @@
                                cider/cider-nrepl                    {:mvn/version "0.50.2"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.10.0"}
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.19.3"}
-                               cider/orchard                        {:mvn/version "0.27.2"}}
+                               cider/orchard                        {:mvn/version "0.28.0"}}
                   :ns-default build
                   :extra-paths ["."
                                 "C:/Users/Utilisateur/scoop/apps/zulufx-jdk/current/lib/src.zip"
