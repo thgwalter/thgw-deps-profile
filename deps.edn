@@ -39,7 +39,7 @@
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.19.3"}
                                cider/orchard                        {:mvn/version "0.27.2"}}
                   :ns-default build
-                  :extra-paths ["."
+                  :extra-paths ["." "dev"
                                 "C:/Users/Utilisateur/scoop/apps/zulufx-jdk/current/lib/src.zip"
                                 "C:/Users/sib_twalter/scoop/apps/zulufx-jdk/current/lib/src.zip"
                                 "/home/util/opt/zulu22.30.13-ca-fx-jdk22.0.1-linux_x64/lib/src.zip"
