@@ -6,18 +6,18 @@
         com.rpl/specter                     {:mvn/version "1.1.4"}
         
         org.clojure/tools.cli               {:mvn/version "1.1.230"}
-        org.jsoup/jsoup                     {:mvn/version "1.18.3"}
+        org.jsoup/jsoup                     {:mvn/version "1.19.1"}
         
         babashka/fs                         {:mvn/version "0.5.24"}
         
-        com.github.seancorfield/next.jdbc   {:mvn/version "1.3.994"}
-        com.github.seancorfield/honeysql    {:mvn/version "2.6.1270"}
-        org.xerial/sqlite-jdbc              {:mvn/version "3.49.0.0"}
+        com.github.seancorfield/next.jdbc   {:mvn/version "1.3.1002"}
+        com.github.seancorfield/honeysql    {:mvn/version "2.7.1295"}
+        org.xerial/sqlite-jdbc              {:mvn/version "3.49.1.0"}
         org.clojars.mjdowney/excel-clj      {:mvn/version "2.2.0"}
 
         camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.3"}
         net.cgrand/xforms                   {:mvn/version "0.19.6"}
-        org.slf4j/slf4j-simple              {:mvn/version "2.0.16"}
+        org.slf4j/slf4j-simple              {:mvn/version "2.0.17"}
 
         http-kit/http-kit                   {:mvn/version "2.8.0"}
         org.babashka/http-client            {:mvn/version "0.4.22"}
@@ -33,10 +33,10 @@
  :mvn/local-repo "C:\\repo"
 
  :aliases {:repl {:extra-deps {nrepl/nrepl                          {:mvn/version "1.3.1"}
-                               cider/cider-nrepl                    {:mvn/version "0.52.0"}
+                               cider/cider-nrepl                    {:mvn/version "0.53.0"}
                                refactor-nrepl/refactor-nrepl        {:mvn/version "3.10.0"}
                                mx.cider/tools.deps.enrich-classpath {:mvn/version "1.19.3"}
-                               cider/orchard                        {:mvn/version "0.30.0"}}
+                               cider/orchard                        {:mvn/version "0.31.1"}}
                   :extra-paths ["." "dev"
                                 "C:/Users/Utilisateur/scoop/apps/zulufx-jdk/current/lib/src.zip"
                                 "C:/Users/sib_twalter/scoop/apps/zulufx-jdk/current/lib/src.zip"
@@ -56,6 +56,6 @@
                   :exec-fn cognitect.test-runner.api/test
                   :main-opts ["-m" "cognitect.test-runner"]}
            
-           :antq {:replace-deps {com.github.liquidz/antq {:mvn/version "2.11.1264"}}
+           :antq {:replace-deps {com.github.liquidz/antq {:mvn/version "2.11.1276"}}
                   :ns-default antq.core
                   :exec-fn -main}}}
